@@ -4,52 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YachtJet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">YachtJet</a>
-      <nav>
-        <ul>
+    <header class="header">
+      <a class="header-logo" href="./index.html">YachtJet</a>
+      <nav class="navigation">
+        <ul class="navigation-list">
           <li>
-            <a href="#about">About</a>
+            <a class="navigation-link" href="#about">About</a>
           </li>
           <li>
-            <a href="#yachts">Yachts</a>
+            <a class="navigation-link" href="#yachts">Yachts</a>
           </li>
           <li>
-            <a href="#reviews">Reviews</a>
+            <a class="navigation-link" href="#reviews">Reviews</a>
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="socials">
         <li>
-          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a
+            class="socials-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            >Instagram</a
+          >
         </li>
         <li>
-          <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+          <a
+            class="socials-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            >YouTube</a
+          >
         </li>
         <li>
-          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          <a
+            class="socials-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            >Facebook</a
+          >
         </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>Explore the High Seas with Our Luxury Yacht Rentals</h1>
-        <p>
+      <section class="hero">
+        <h1 class="hero-title">
+          Explore the High Seas with Our Luxury Yacht Rentals
+        </h1>
+        <p class="hero-text">
           Experience the freedom and luxury of yachting on the open seas. Choose
           from our top-of-the-line yachts and embark on an unforgettable journey
           surrounded by breathtaking views and state-of-the-art amenities.
         </p>
         <a href="#rental">Yacht rental</a>
       </section>
-      <section>
-        <h2>YachtJet fleet is here to take you on the ultimate adventure</h2>
-        <h3>
+      <section id="about" class="about">
+        <h2 class="about-title">
+          YachtJet fleet is here to take you on the ultimate adventure
+        </h2>
+        <h3 class="about-subtitle">
           From spacious decks to state-of-the-art technology, our yachts are
           designed to provide the perfect blend of luxury and functionality.
         </h3>
-        <p>
+        <p class="about-text">
           Take a look at our selection below and choose the yacht that matches
           your needs and preferences.No matter which yacht you choose, our
           experienced crew will ensure that your journey is smooth and
@@ -57,18 +91,21 @@
           the high seas.
         </p>
         <img
+          class="about-image"
           src="./images/main/main.webp"
           alt="yacht"
           width="1180"
           height="470"
         />
       </section>
-      <section id="yachts">
-        <h2>Choose your dream yacht and sail away into the sunset</h2>
-        <ul>
-          <li>
-            <ul>
-              <li>
+      <section id="yachts" class="yachts">
+        <h2 class="yachts-title">
+          Choose your dream yacht and sail away into the sunset
+        </h2>
+        <ul class="yachts-list">
+          <li class="yachts-item">
+            <ul class="yachts-card">
+              <li class="yachts-card-info">
                 <img
                   src="./images/yachts/yaht1.webp"
                   alt="luxury arrow"
@@ -78,7 +115,7 @@
                 <h3>Arrow</h3>
                 <p>LUXURY YAHTS</p>
               </li>
-              <li>
+              <li class="yachts-card-specs">
                 <p>LENGTH</p>
                 <span>48m&#40;155ft&#41;</span>
                 <p>BUILDER</p>
@@ -92,9 +129,9 @@
               </li>
             </ul>
           </li>
-          <li>
-            <ul>
-              <li>
+          <li class="yachts-item">
+            <ul class="yachts-card">
+              <li class="yachts-card-info">
                 <img
                   src="./images/yachts/yaht2.webp"
                   alt="yacht benetti oasis"
@@ -104,7 +141,7 @@
                 <h3>BENETTI OASIS 40M BO122</h3>
                 <p>LUXURY YAHTS</p>
               </li>
-              <li>
+              <li class="yachts-card-specs">
                 <p>LENGTH</p>
                 <span>41m &#40;133ft&#41;</span>
                 <p>SHIPYARD</p>
@@ -118,9 +155,9 @@
               </li>
             </ul>
           </li>
-          <li>
-            <ul>
-              <li>
+          <li class="yachts-item">
+            <ul class="yachts-card">
+              <li class="yachts-card-info">
                 <img
                   src="./images/yachts/yaht3.webp"
                   alt="yacht belle anna"
@@ -130,7 +167,7 @@
                 <h3>BELLE ANNA</h3>
                 <p>LUXURY YAHTS</p>
               </li>
-              <li>
+              <li class="yachts-card-specs">
                 <p>LENGTH</p>
                 <span>50m&#40;155ft&#41;</span>
                 <p>SHIPYARD</p>
@@ -147,44 +184,48 @@
         </ul>
         <a href="#rental">Yacht rental</a>
       </section>
-      <section id="about">
-        <ol>
-          <li>
-            <p>01</p>
-            <p>Swimming and water sports: try your hand at water skiing</p>
-          </li>
-          <li>
-            <p>02</p>
-            <p>Fishing: try to catch your own dinner</p>
-          </li>
-          <li>
-            <p>03</p>
-            <p>
-              Sightseeing tours&#58; take a shore or island tour, enjoy the
-              views and sunsets from the water
+      <section class="explain">
+        <ul class="explain-list">
+          <li class="explain-item">
+            <p class="explain-number">01</p>
+            <p class="explain-text">
+              Swimming and water sports: try your hand at water skiing
             </p>
           </li>
-          <li>
-            <p>04</p>
-            <p>
-              Rest and relaxation&#58; read a book or listen to music while
-              enjoying the outdoor atmosphere.
+          <li class="explain-item">
+            <p class="explain-number">02</p>
+            <p class="explain-text">Fishing: try to catch your own dinner</p>
+          </li>
+          <li class="explain-item">
+            <p class="explain-number">03</p>
+            <p class="explain-text">
+              Sightseeing tours: take a shore or island tour, enjoy the views
+              and sunsets from the water
             </p>
           </li>
-        </ol>
+          <li class="explain-item">
+            <p class="explain-number">04</p>
+            <p class="explain-text">
+              Rest and relaxation: read a book or listen to music while enjoying
+              the outdoor atmosphere.
+            </p>
+          </li>
+        </ul>
       </section>
-      <section id="rental">
+      <section id="rent" class="rent">
         <img
+          class="rent-image"
           src="./images/rent/rent.webp"
           alt="rent yacht"
           width="568"
           height="536"
         />
-        <h2>Rent a yacht now</h2>
-        <form action=""></form>
-        <button type="button">Send</button>
+        <h2 class="rent-title">Rent a yacht now</h2>
+        <form action="">
+          <button class="rent-button" type="button">Send</button>
+        </form>
       </section>
-      <section id="reviews">
+      <section id="reviews" class="reviews">
         <h2>
           YachtJet take pride in providing the best possible service and
           experience to our customers
